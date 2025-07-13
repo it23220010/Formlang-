@@ -1,0 +1,26 @@
+<html><body>
+<h1>Generated Form</h1>
+<form>
+<div><label>Fullname:</label><br><input type="text" name="fullName" required pattern="[A-Za-z ]+" default="John Doe"></div>
+<div><label>About:</label><br><textarea name="about" rows="3" cols="40" default="Enter details..."></textarea></div>
+<div><label>Age:</label><br><input type="number" name="age" min="18" max="65" required></div>
+<div><label>Email:</label><br><input type="email" name="email" pattern=".+@.+\\..+" required></div>
+<div><label>Dob:</label><br><input type="date" name="dob" min="1990-01-01" max="2020-12-31" required></div>
+<div><label><input type="checkbox" name="agree"> Agree</label></div>
+<div><label>Gender:</label><br>
+<input type="radio" name="gender" value="Male"> Male<br>
+<input type="radio" name="gender" value="Female"> Female<br>
+<input type="radio" name="gender" value="Other"> Other<br>
+</div>
+<div><label>Country:</label><br><select name="country">
+<option value="Sri Lanka">Sri Lanka</option>
+<option value="India">India</option>
+<option value="Other">Other</option>
+</select></div>
+<div><label>Password:</label><br><input type="password" name="password" required pattern=".{8,}"></div>
+<div><label>Resume:</label><br><input type="file" name="resume" accept=".pdf,.doc" required></div>
+<!-- Validation: if age < 18 -->
+<!-- Error: You must be at least 18. -->
+<div><input type="submit" value="Submit"></div>
+</form>
+</body></html>
